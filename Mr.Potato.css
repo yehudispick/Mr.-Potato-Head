@@ -1,0 +1,69 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr .25fr 5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:    " . header header header ."
+                            ". timer timer timer ."
+                            " . pic . area .";
+    background-image: url(images/background.jpg)
+}
+#header{
+    grid-area: header;
+    text-align: center;
+    color:rgba(141, 13, 41, 0.678);
+    
+}
+button{
+    height: 2.5em;
+    width: 5em;
+    margin: .5em;
+    background-color: rgb(14, 99, 138);
+    color:white;
+    border-radius: 5px;
+}
+
+.display{
+    background-color: white;
+    border-radius: 8px;
+
+}
+ #origanal{
+
+   grid-area: pic;
+   align-self: center;
+   justify-items: center;
+    
+}
+
+#area{
+   align-items: center;
+   justify-items: center;
+    grid-area: area;
+    
+}
+.pic{
+
+    position: absolute;
+    z-index: 0;
+    
+}
+#timer{
+    margin: .5em;
+    padding: .5em;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    color:rgba(141, 13, 41, 0.678);
+    grid-area: timer;
+    
+
+}
+#tl{
+    margin: .5em;
+}
+#timerDiv{
+    color: black;
+              
+}

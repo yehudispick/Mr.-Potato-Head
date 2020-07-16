@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mr. Potato Head</title>
+    <link rel="stylesheet" href="Mr.Potato.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Can you beat the timer?</h1>
+        <h2>Once you press start you have 1 and a half minutes to arrange the parts like the one on the left</h2>
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+    </header>
+    
+    <div class="display" id="origanal">
+            <img  src="images/Mr. p.png" >
+            <audio id="music" autoplay></audio>
+    </div>
+
+    <div class="display" id="area">
+            <img class="pic" id="body" src="images/body.png" alt="body">
+            <img class="pic" id="teeth" src="images/teeth.png" alt="teeth">
+            <img class="pic" id="rightHand" src="images/righthand.png" alt="righthand">
+            <img class="pic" id="leftHand" src="images/leftHand.png" alt="leftHand">            
+            <img class="pic" id="eyes" src="images/eyes.png" alt="eyes">
+            <img class="pic" id="leftEar" src="images/leftear.png" alt="leftear">
+            <img class="pic" id="hat" src="images/hat.png" alt="hat">
+            <img class="pic" id="nose" src="images/nose.png" alt="nose">
+            <img class="pic" id="shoes" src="images/shoes.png" alt="shoes">
+            <img class="pic" id="rightEar" src="images/rightear.png" alt="rightear">
+            
+    </div>
+    <div id="timer">
+            <h4 id="tl">Time Left:</h4>
+            <div id="timerDiv">1:30</div>
+    </div>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="Mr.Potato.js"></script>
+</body>
+</html>
